@@ -1,0 +1,27 @@
+\ProvidesPackage{altlang}[2015/09/20 Alternative Languages Package]
+
+\RequirePackage{xstring}
+\RequirePackage{etoolbox}
+
+\newtoggle{alternativelanguage}
+\togglefalse{alternativelanguage}
+
+\IfSubStr*{\jobname}{\secondlang}{%
+   \toggletrue{alternativelanguage}%
+}{%
+   \togglefalse{alternativelanguage}%
+}
+
+\newcommand{\lang}[2]{\iftoggle{alternativelanguage}{#2}{#1}}
+
+\newcommand{\producealternativelanguage}{%
+   \iftoggle{alternativelanguage}{}{%
+      \StrBefore*{\jobname}{\firstlang}[\substrbefore]
+      \StrBehind*{\jobname}{\firstlang}[\substrbehind]
+      \edef\myjobname{\substrbefore\secondlang\substrbehind}
+      \def\space{ }
+      \immediate\write18{pdflatex --jobname=\myjobname\space \jobname.tex}
+   }
+}
+
+\endinput
