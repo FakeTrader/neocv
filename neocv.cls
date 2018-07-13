@@ -10,4 +10,22 @@
 \LoadClass[a4paper]{ctexart}
 \ProvidesClass{neocv}[2018/07/12 Neo CV class]
 
+%============================================
+%               Options
+%============================================
+
+\DeclareOption{a4paper}{\PassOptionsToClass{\CurrentOption}{article}}
+
+\ProcessOptions\relax
+
+%-------------------------------------------
+%              end of options
+%===========================================
+%              package setups
+%============================================
+
+\RequirePackage{geometry}
+
+%-------------------------------------
+%            end of pkg setup
 %======================EOF===================
