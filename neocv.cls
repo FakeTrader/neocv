@@ -24,7 +24,12 @@
 %              package setups
 %============================================
 
-\RequirePackage{geometry}
+\RequirePackage[%
+    left=28mm,
+    right=26mm,
+    top=37mm,
+    bottom=35mm
+]{geometry}
 
 %-------------------------------------
 %            end of pkg setup
