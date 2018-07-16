@@ -36,13 +36,16 @@
 \zihao{4}
 
 \ctexset{%
+%    autoindent = false,
     section = {
         numbering   = false,
+%        indent      = 0pt,
         format      = \Large\bfseries,
         afterskip   = 0pt,
         aftertitle  = \par\smallskip\nointerlineskip\rule{\linewidth}{1bp}\par
     }
 }
+\setlength\parindent{0pt}
 %-------------------------------------
 %            end of pkg setup
 %======================EOF===================
