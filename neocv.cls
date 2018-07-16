@@ -31,6 +31,18 @@
     bottom=35mm
 ]{geometry}
 
+\pagestyle{empty}
+
+\zihao{4}
+
+\ctexset{%
+    section = {
+        numbering   = false,
+        format      = \Large\bfseries,
+        afterskip   = 0pt,
+        aftertitle  = \par\smallskip\nointerlineskip\rule{\linewidth}{1bp}\par
+    }
+}
 %-------------------------------------
 %            end of pkg setup
 %======================EOF===================
