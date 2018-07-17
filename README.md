@@ -10,3 +10,8 @@ You should compile the tex file in cmd-line with `--shell-escape` parameter.
 xelatex --shell-escape neocv-zh.tex
 ```
 
+## Biligual
+
+Special tricks from [JohnB's answer on Stack Overflow](https://tex.stackexchange.com/a/268848)
+
+**Note:** Only Chinese and English were tested. Other languages may require special handling.
