@@ -1,3 +1,11 @@
+## Local config files:
+redate-settings
+## Outputs
+neocv-zh.pdf
+neocv-en.pdf
+## Testing files
+test/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
